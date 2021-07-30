@@ -21,15 +21,18 @@ const formatZero = year + month + day;
 const formatOne = month + day + year;
 const formatTwo = day + month + year;
 const formatThree = month + day + year.slice(2);
+
 console.log(formatZero);
 console.log(formatOne);
 console.log(formatTwo);
 console.log(formatThree);
+
 //Reversed Formats
 const reversedZero = formatZero.split("").reverse().join("");
 const reversedOne = formatOne.split("").reverse().join("");
 const reversedTwo = formatTwo.split("").reverse().join("");
 const reversedThree = formatThree.split("").reverse().join("");
+
 
 
   if (formatZero===reversedZero || formatOne===reversedOne || formatTwo===reversedTwo || formatThree===reversedThree) {
@@ -38,4 +41,9 @@ const reversedThree = formatThree.split("").reverse().join("");
   } else {
     result.innerText = "Your Birthday is not Palindrome";
   }
+
 });
+
+
+
+
